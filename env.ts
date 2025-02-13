@@ -1,6 +1,8 @@
 import { loadEnvConfig } from "@next/env";
 import { z } from "zod";
 
+export type Schema = z.infer<typeof schema>;
+
 const schema = z.object({
 	NODE_ENV: z
 		.union([
