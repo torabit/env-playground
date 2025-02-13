@@ -16,8 +16,4 @@ export const env = createEnv({
       .union([z.literal("sandbox"), z.literal("qa"), z.literal("production")])
       .default("production"),
   },
-  client: {
-    /** サイトの URL */
-    NEXT_PUBLIC_SITE_URL: z.string().url(),
-  },
 });
